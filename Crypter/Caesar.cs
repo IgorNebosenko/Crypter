@@ -20,7 +20,7 @@ namespace Crypter
         /// </summary>
         public void Crypt()
         {
-            string newPath = this.Path + ".xor";
+            string newPath = this.Path + ".csr";
             StringBuilder sb = new StringBuilder(File.ReadAllText(this.Path));
 
             int iCurrPosStr = 0;
