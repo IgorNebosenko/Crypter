@@ -2,8 +2,16 @@
 using System.IO;
 namespace Crypter
 {
+    /// <summary>
+    /// Main class of programm
+    /// </summary>
     class Program
     {
+        /// <summary>
+        /// Entry point of programm
+        /// </summary>
+        /// <param name="args">Arguments</param>
+        /// <returns> 0 if all good, also - error code</returns>
         static int Main(string[] args)
         {
             Console.WriteLine("Print path");

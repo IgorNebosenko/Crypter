@@ -3,10 +3,22 @@ using System.Text;
 
 namespace Crypter
 {
+    /// <summary>
+    /// Class of Xor Crypt
+    /// </summary>
     public class XOR : ICrypt
     {
+        /// <summary>
+        /// Property of Path
+        /// </summary>
         public string Path { get; set; }
+        /// <summary>
+        /// Property of key
+        /// </summary>
         public string Key { get; set; }
+        /// <summary>
+        /// Crypt method
+        /// </summary>
         public void Crypt()
         {
             string newPath = this.Path + ".xor";
@@ -21,7 +33,11 @@ namespace Crypter
             }
             File.WriteAllText(newPath, sb.ToString());
         }
-
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="path">Path</param>
+        /// <param name="key">Key</param>
         public XOR(string path, string key)
         {
             this.Path = path;
